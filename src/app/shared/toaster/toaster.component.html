@@ -1,0 +1,4 @@
+<div *ngFor="let toaster of toasters" class="{{ cssClass(toaster) }} alert-dismissable">
+  {{toaster.message}}
+  <a class="close" (click)="removeToaster(toaster)">&times;</a>
+</div>
